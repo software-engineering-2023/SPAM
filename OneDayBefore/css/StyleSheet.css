@@ -1,0 +1,137 @@
+﻿root {
+    --white-color: #ffffff;
+    --custom-btn-bg-color: #80d0c7;
+    --custom-btn-bg-hover-color: #13547a;
+    --border-radius-large: 100px;
+    --title-font-family: 'Montserrat', sans-serif;
+    --p-font-size: 20px;
+    --primary-color: #13547a;
+    --font-weight-semibold: 600;
+}
+
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position it as fixed */
+    z-index: 1; /* Set the z-index to make it appear on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Center the modal vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Set the width of the modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .custom-form .form-floating {
+        width: 100%;
+    }
+
+        .custom-form .form-floating label {
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+        }
+
+    .custom-form .form-control {
+        margin-top: 10px;
+    }
+
+
+    .custom-form button[type="button"]:hover,
+    .custom-form button[type="button"]:focus {
+        background: var(--custom-btn-bg-hover-color);
+        border-color: transparent;
+        border: none;
+        border-radius: var(--border-radius-large);
+        color: var(--white-color);
+        font-family: var(--title-font-family);
+        font-size: var(--p-font-size);
+        font-weight: var(--font-weight-semibold);
+        transition: all 0.3s;
+        margin-bottom: 0;
+        background-color: var(--primary-color);
+        border-radius: var(--border-radius-large) ;
+        color: var(--white-color);
+    }
+
+    .custom-form.contact-form {
+        text-align: center;
+    }
+
+        .custom-form.contact-form .done-message {
+            margin-top: 20px;
+        }
+.s-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+.s-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px;
+    text-align: center;
+}
+
+.s-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .s-close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.custom-block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.img-fluid {
+    max-width: 30%; /* Adjust the percentage as needed */
+    height: auto;
+}
