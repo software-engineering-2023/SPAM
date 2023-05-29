@@ -1,0 +1,164 @@
+﻿<section class="section-padding section-bg">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-12 col-12 text-center">
+                <h3 class="mb-4 pb-2">Please Fill the fields below</h3>
+            </div>
+            <div class="col-lg-6 col-12">
+                <form action="index.html" class="custom-form contact-form" role="form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="text" name="mobile" id="mobile" class="form-control" placeholder="Mobile Number" pattern="[0-9]{11}" required>
+                            <label for="mobile">Mobile Number</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                            <label for="floatingInput">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="text" name="NatonalID" id="NatonalID" class="form-control" placeholder="National ID" pattern="[0-9]{14}" required>
+                            <label for="floatingInput">National ID</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <select name="city" id="city" class="form-control" required="">
+                                <option value="" selected disabled>City</option>
+                                <option value="6th of October City">6th of October City</option>
+                                <option value="Alexandria">Alexandria</option>
+                                <option value="Aswan">Aswan</option>
+                                <option value="Asyut">Asyut</option>
+                                <option value="Banha">Banha</option>
+                                <option value="Beni Suef">Beni Suef</option>
+                                <option value="Cairo">Cairo</option>
+                                <option value="Damanhur">Damanhur</option>
+                                <option value="Damietta">Damietta</option>
+                                <option value="Faiyum">Faiyum</option>
+                                <option value="Giza">Giza</option>
+                                <option value="Hurghada">Hurghada</option>
+                                <option value="Ismailia">Ismailia</option>
+                                <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+                                <option value="Luxor">Luxor</option>
+                                <option value="Mansoura">Mansoura</option>
+                                <option value="Minya">Minya</option>
+                                <option value="Port Said">Port Said</option>
+                                <option value="Qena">Qena</option>
+                                <option value="Sharm El Sheikh">Sharm El Sheikh</option>
+                                <option value="Sohag">Sohag</option>
+                                <option value="Suez">Suez</option>
+                                <option value="Tanta">Tanta</option>
+                                <option value="Zagazig">Zagazig</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <select name="type" id="type" class="form-control" required="">
+                                <option value="" selected disabled>Card Type</option>
+                                <option value="Silver Credit Card">Silver Credit Card</option>
+                                <option value="Gold Credit Card">Gold Credit Card</option>
+                                <option value="Platinum Credit Card">Platinum Credit Card</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <p>
+                                <input name="agree" id="agree" type="checkbox" required>     <label for="remember">  Agree on Terms and conditions.</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+
+<script>
+    document.querySelector("form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        var nameValue = document.getElementById("name").value;
+        localStorage.setItem("name", nameValue);
+        window.location.href = "thank-you.html";
+    });</script>
+
+
+
+1111111111111111111111111111111111111111111
+
+
+
+<section class="section-padding section-bg">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-12 col-12 text-center">
+                <h3 class="mb-4 pb-2">Please Fill the fields below</h3>
+            </div>
+            <div class="col-lg-6 col-12">
+                <form action="index.html" class="custom-form contact-form" role="form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <select name="account-from" id="account-from" class="form-control" placeholder="Account from:" required="">
+                                <option value="" selected disabled>Account from:</option>
+                                <option value="978-4-56-789012-9">978-4-56-789012-9</option>
+                                <option value="978-5-67-890123-8">978-5-67-890123-8</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <select name="city" id="city" class="form-control" required="" onchange="toggleDonations(this.value)">
+                                <option value="" selected disabled>Institute</option>
+                                <option value="Beit El Zakat">Beit El Zakat</option>
+                                <option value="57357 Children">57357 Children</option>
+                                <option value="Magdi Yacoub Company">Magdi Yacoub Company</option>
+                                <option value="Mersal Foundation">Mersal Foundation</option>
+                                <option value="Al-Nas Hospital">Al-Nas Hospital</option>
+                                <option value="Misr El Kheir">Misr El Kheir</option>
+                                <option value="Egyptian Food Bank">Egyptian Food Bank</option>
+                                <option value="other">Other</option> <!-- Added "Other" option -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                            <label for="floatingInput">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-floating">
+                            <input type="number" name="amount" id="amount" class="form-control" placeholder="Amount" required="">
+                            <label for="floatingInput">Amount</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="form-control">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
